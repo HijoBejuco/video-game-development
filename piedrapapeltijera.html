@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>piedra, papel o tijera</title>
+
+        <script>
+            //Esto es un comentario <3
+            let mango = 0
+            let alejo = 0
+            alert("este es el juego de piedra papel o tijera")
+            mango = prompt("Manguito, escribe 1 para piedra, 2 para papel y 3 para tijeras (No dejes que Alejo vea qué escogiste!!!!!)")
+            alejo = prompt("Alejo, escribe 1 para piedra, 2 para papel y 3 para tijeras (No dejes que Manu vea qué escogiste!!!!!)")
+            
+            if (mango === alejo) {
+                alert("Empate! Ninguno gana!")
+            } 
+            
+            else if (mango == 1) {
+
+                if (alejo == 2) {
+                    alert("Alejo gana, el papel mata a la piedra (jijiji)")
+                }
+
+                if (alejo == 3) {
+                    alert("Manguito gana, la piedra mata a la tijera, la vuelve miercoles (jujuju)")
+                }
+            }
+            
+            else if (mango == 2){
+
+                if (alejo == 1) {
+                    alert("Manu gana, el papel mata a la piedra (jijiji)")
+                }
+
+                if (alejo == 3) {
+                    alert("Alejo gana, la tijera mata al papel")
+                }
+            }
+
+            else if (mango == 3){
+                if (alejo == 1) {
+                    alert("Alejo gana, la piedra mata a la tijera (jijiji)")
+                }
+
+                if (alejo == 2) {
+                    alert("Manu gana, la tijera mata al papel")
+                }
+            }
+
+            else {
+                alert("numero invalido, intentelo de nuevo.")
+            }
+
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Piedra, papel o tijera</h1>
+
+    </body>
+</html>
