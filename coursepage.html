@@ -8,15 +8,17 @@
       }
 
       function eleccion(numero_elegido) {
+        let resultado = ""
         if(numero_elegido == 1) {
-            return alert("piedra 🪨")
+            resultado = "piedra 🪨"
         } else if (numero_elegido == 2) {
-            return alert("papel 📃")
+            resultado = "papel 📃"
         } else if (numero_elegido == 3) {
-            return alert("tijera ✂️")
+            resultado = "tijera ✂️"
         } else {
-            return alert("PERDER")
+            resultado = "PERDER"
         }
+        return resultado
       }
 
 
@@ -24,22 +26,29 @@
       let jugador = 0
       let pc = aleatorio(1,3)
       alert("El PC elige: " + eleccion(pc))
-    //   jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
-    //   alert("El jugador elige: "+ eleccion(jugador))
+      jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
+      alert("El jugador elige: "+ eleccion(jugador))
 
 
-      // COMBATE
-      if (pc == jugador) {
-        alert("EMPATE")
-      } else if (jugador == 1 && pc == 3) {
-        alert("GANASTE")
-      } else if (jugador == 2 && pc == 1) {
-        alert("GANASTE")
-      } else if (jugador == 3 && pc == 2) {
-        alert("GANASTE")
-      } else {
-        alert("PERDISTE")
+
+
+      function combate(jugador, pc) {
+        
+        if (pc == jugador) {
+          alert("EMPATE")
+        } else if (jugador == 1 && pc == 3) {
+          alert("GANASTE")
+        } else if (jugador == 2 && pc == 1) {
+          alert("GANASTE")
+        } else if (jugador == 3 && pc == 2) {
+          alert("GANASTE")
+        } else {
+          alert("PERDISTE")
+        }
+
       }
+
+
     </script>
   </head>
   <body>
