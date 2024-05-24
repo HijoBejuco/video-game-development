@@ -44,7 +44,8 @@
       let jugador = 0
       
       let contador_ganancias = 0
-      //while(contador_ganancias < 2) {
+
+      while(contador_ganancias < 3) {
         // Siga jugando hasta que se ganen 3 veces
         let pc = aleatorio(1,3)
         alert("El PC elige: " + eleccion(pc))
@@ -54,9 +55,12 @@
         let resultado = combate(jugador, pc)
         alert("El jugador " + resultado)
 
-        if(resultado =)
+        if(resultado == "GANA") {
+          contador_ganancias = contador_ganancias + 1
+        }
+        alert("el contador va en: " + contador_ganancias)
 
-      //}
+      }
 
 
     </script>
