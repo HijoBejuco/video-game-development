@@ -9,6 +9,7 @@ This game will be called "Mokepon". It's a very simple game, where we fight usin
 * **< meta charset="utf-8" />**: This allows to add ñ and special characters
 * **Creating a button:**
     * the correct way of creating a button is putting the **button** markup inside a paragraph markup: 
+    
     < p > 
         < button > This is a button </ button >
     < /p >
