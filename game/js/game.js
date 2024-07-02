@@ -1,4 +1,7 @@
-alert("Hello, this is an imported js file")
+
+function selectCharacter() {
+    alert("You choosed your character")
+}
 
 
 // This creates the variable, using the getElementById
@@ -8,5 +11,5 @@ let characterSelectionButton = document.getElementById("select_character_button"
 // Once we created the button variable, it has some methods,
 // like the listener when click, also we should pass to it 
 // the function we want to excecute. 
-characterSelectionButton.addEventListener("click",)
+characterSelectionButton.addEventListener("click", selectCharacter)
 
