@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>THIS IS THE GAME!!!</title>
+        <!-- Here, we connect the javascript with html -->
         <script src="./js/game.js"></script>
     </head>
 
@@ -10,6 +11,14 @@
 
         <h1>MY GAME 🌿</h1>
 
+        <!--
+        Radio buttons are used when the options are mutually exclusive like in this case.
+        The "name" attribute is used to group the radio buttons, so only one can be selected 
+        at a time.
+        The input tag is used to aks the user some data, in this case we are asking the user
+        to select a character by clicking on the radio buttons. But it also can be used to 
+        ask the user to write some text, select a date, etc.
+        -->
         <section id="select-character">
             <h2>Select a character!!!</h2>
 
@@ -22,6 +31,8 @@
             <label for="Rat">Rat</label>
             <input type="radio" name="character" id="Rat"/>
 
+            <!-- Its recommended locate the buttons inside 
+             paragraph tags("<p>") -->
             <p>
                 <button id="select_character_button">Select_character</button>
             </p>
