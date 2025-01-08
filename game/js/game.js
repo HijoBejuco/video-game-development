@@ -22,5 +22,5 @@ function selectCharacter() {
 
 // the window object represents the browser window, so here we 
 // are telling the browser to excecute the gameInitializer function
-// once the window is loaded.
+// once the window is completely loaded.
 window.addEventListener("load", gameInitializer)
