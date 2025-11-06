@@ -1,5 +1,10 @@
 # video-game-development
-Video game construction using HTML, Javascript. 
+Video game construction using HTML, Javascript.
+
+## Workflow
+
+1. The ```window.addEventListener("load", gameInitializer)``` line, excecutes the js functions when the browser window is loaded.
+2. gameInitializer() function: this charges all the needed connections and functions to run the page (game)
 
 ## Game Description
 This game will be called "Mokepon". It's a very simple game, where we fight using different characters (fire, water, earth)
