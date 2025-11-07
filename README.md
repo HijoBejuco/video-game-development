@@ -19,13 +19,20 @@ So the process for interacting with the page is:
 * Selecting the character (Hipo, Capi, Rat)
 * Selecting the element (fire, water, earth)
 
+
+
 # HTML markups guide
+
 * < strong > This is for Bolding text < /strong >
 * **< meta charset="utf-8" />**: This allows to add ñ and special characters
 * **Creating a button:**
     * the correct way of creating a button is putting the **button** markup inside a paragraph markup: 
 
     < p > < button > This is a button </ button > < /p >
+* **DOM:** Document Object Model, is a representation in memory of the HTML page, which let js read and modify the content, structure and style of the page. 
+* < span > This is used for make the text dinamic. So we can modify the text -using js- inside the span, depending on the excecution, like a variable.
+
+
 
 # JAVASCRIPT Notes 
 * **Creating a variable:** use the prefix let and then declare the variable (let variable_name = 1)

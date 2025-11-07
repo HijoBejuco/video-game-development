@@ -16,17 +16,22 @@ function gameInitializer() {
     characterSelectionButton.addEventListener("click", selectCharacter)
 }
 
-/* In this function we use the "document" class to bring elements by 
-their id, and then verify if that particular radio button is checked
-by the user. */
+/* In this function we use the "document" class to bring elements by their id from 
+the HTML doc, and then verify if that particular radio button is checked by the user 
+and modify the DOM depending on the selected character 
+
+The .innerHTML property is used to modify the content inside the html element we have
+selected. In this case, we modify the string inside the span with id "player-character"
+*/
 function selectCharacter() {
 
     let inputHipo = document.getElementById("Hipo")
     let inputCapi = document.getElementById("Capi")
     let inputRat = document.getElementById("Rat")
+    let spanPlayerCharacter = document.getElementById("player-character")
 
     if (inputHipo.checked) {
-        alert("You have selected Hipo")
+        spanPlayerCharacter.innerHTML = "Hipo"
     }
     else if (inputCapi.checked) {
         alert("You have selected Capi")
