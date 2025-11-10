@@ -4,7 +4,9 @@ Video game construction using HTML, Javascript.
 ## Workflow
 
 1. The ```window.addEventListener("load", gameInitializer)``` line, excecutes the js functions when the browser window is loaded.
-2. gameInitializer() function: this charges all the needed connections and functions to run the page (game)
+2. **gameInitializer()** function: this charges all the needed connections and functions to run the page (game)
+3. The player selects one of the available characters.
+4. The game selects randomly the enemy character. 
 
 ## Game Description
 This game will be called "Mokepon". It's a very simple game, where we fight using different characters (fire, water, earth)

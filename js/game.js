@@ -34,10 +34,10 @@ function selectCharacter() {
         spanPlayerCharacter.innerHTML = "Hipo"
     }
     else if (inputCapi.checked) {
-        alert("You have selected Capi")
+        spanPlayerCharacter.innerHTML = "Capi"
     }
     else if (inputRat.checked) {
-        alert("You have selected Rat")
+        spanPlayerCharacter.innerHTML = "Rat"
     }
     // In case no character is selected, we alert the user.
     else {
