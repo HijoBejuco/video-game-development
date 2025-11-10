@@ -43,6 +43,34 @@ function selectCharacter() {
     else {
         alert("you must select a character")
     }
+
+    /* Here we need to call the selectEnemyCharacter function, once the
+    player has selected it's character, remember thar this selectEnemyCharacter
+    selects the enemy by random, so it automatically selects the enemy.  */
+    selectEnemyCharacter()
+
+}
+
+/* This function selects the enemy character randomly */
+function selectEnemyCharacter() {
+
+    let randomAttack = randomNum(1, 3)
+    let spanEnemyCharacter = document.getElementById("enemy-character")
+
+    if (randomAttack == 1) {
+        spanEnemyCharacter.innerHTML = "Hipo"
+    }
+    else if (randomAttack == 2) {
+        spanEnemyCharacter.innerHTML = "Capi"
+    }
+    else {
+        spanEnemyCharacter.innerHTML = "Rat"
+    }
+}
+
+
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 /* the window object represents the browser window, so here we 
